@@ -1,4 +1,24 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+}
+#celso-logo{
+    width: 90%;
+    height: 100%;
+}
+#sport-logo{
+    height: 200px;
+    aspect-ratio: 1 / 1;
+}
+.main-content #heading{
+    font-size: 50px;
+    text-align: center;
+}
+.main-content .info{
+    display: flex;
+    gap: 30px;
 }
