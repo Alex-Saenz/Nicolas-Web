@@ -1,4 +1,4 @@
-{
+*{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,10 +15,18 @@ header{
     aspect-ratio: 1 / 1;
 }
 .main-content #heading{
-    font-size: 50px;
+    font-size: 35px;
     text-align: center;
 }
 .main-content .info{
     display: flex;
     gap: 30px;
+}
+.info p{
+    font-size: 2em;
+    width: 50%;
+}
+.main-content .apartados{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
 }
