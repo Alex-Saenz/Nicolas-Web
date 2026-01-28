@@ -6,25 +6,24 @@
     color: #eee;
 }
 body{
-    height: 100vh;
     width: 100vw;
-    overflow: hidden;
-    background: url(assetts/Background.avif) no-repeat;
+    background: #222;
     background-position: center;
     background-size: cover;
 }
 header{
     display: flex;
     justify-content: center;
-    gap: 2%;
-    height: 10%;
-}
-#celso-logo{
+    width: 100%;
     height: 100%;
 }
-#sport-logo{
-    height: 100%;
-    aspect-ratio: 1 / 1;
+header img{
+    width: 60%;
+    height: auto;
+}
+.main-content{
+    margin-top: 5rem;
+    padding: 0 5% 0;
 }
 .main-content #heading{
     font-size: 1.5em;
@@ -32,22 +31,35 @@ header{
 }
 .main-content .info{
     display: flex;
-    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     gap: 30px;
-}
+} 
 .info p{
-    font-size: 1.2em;
+    font-size: 1.5rem;
     width: 50%;
+}
+.info img{
+    width: 70%;
+    height: 100%;
+    border-radius: 10%;
 }
 .main-content .apartados{
     display: grid;
-    background: lightblue;
+    background: #333;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5%;
+    gap: 2rem;
     padding: 5%;
     border-radius: 2.5rem;
 }
 .apartados img{
     height: auto;
     width: 100%;
+}
+footer{
+    background: #111;
+    margin-top: 2rem;
+    height: 150px;
+    text-align: center;
+    padding-top: 3rem;
 }
