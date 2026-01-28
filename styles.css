@@ -1,21 +1,27 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body{
+    height: 100vh;
+}
 header{
     display: flex;
+    justify-content: center;
+    gap: 15px;
+    height: 12%;
 }
 #celso-logo{
-    width: 90%;
     height: 100%;
 }
 #sport-logo{
-    height: 200px;
+    height: 100%;
     aspect-ratio: 1 / 1;
 }
 .main-content #heading{
-    font-size: 35px;
+    font-size: 1.5em;
     text-align: center;
 }
 .main-content .info{
@@ -23,10 +29,16 @@ header{
     gap: 30px;
 }
 .info p{
-    font-size: 2em;
+    font-size: 1.2em;
     width: 50%;
 }
 .main-content .apartados{
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    background: lightblue;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+}
+.apartados img{
+    height: auto;
+    width: 100%;
 }
