@@ -51,6 +51,7 @@ header img{
     gap: 2rem;
     padding: 5%;
     border-radius: 2.5rem;
+    margin-bottom: 3%;
 }
 .apartados img{
     height: auto;
@@ -63,6 +64,15 @@ footer{
     text-align: center;
     padding-top: 3rem;
 }
+.organizadores{
+    background: #333;
+    padding: 5%;
+    border-radius: 2.5rem;
+}
+.organizadores img{
+    height: auto;
+    width: 100%;
+}
 @media (max-width: 768px){
     header img{
         width: 100%;
@@ -72,7 +82,7 @@ footer{
         align-items: center;
     }
     .info p{
-        font-size: .6rem;
+        font-size: .8rem;
         width: 90%;
     }
     .info img{
