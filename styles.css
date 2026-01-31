@@ -42,13 +42,13 @@ header img{
 .info img{
     width: 70%;
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
 }
 .main-content .apartados{
     display: grid;
     background: #333;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 3.2rem;
     padding: 5%;
     border-radius: 2.5rem;
     margin-bottom: 3%;
@@ -101,6 +101,9 @@ footer{
     height: auto;
     border-radius: 20px;
 }
+.main-content .apartados img:hover{
+    transform: rotate(-1deg) scale(1.1);
+}
 @media (max-width: 768px){
     header img{
         width: 100%;
@@ -144,5 +147,8 @@ footer{
     }
     .person-display .organizers-photos{
         grid-template-columns: repeat(3, 1fr);
+    }
+    .main-content .apartados img:hover{
+    transform: rotate(-0.7deg) scale(1.05);
     }
 }
