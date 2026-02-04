@@ -59,13 +59,13 @@ header img{
     width: 100%;
 }
 .apartados #dinamicas:hover{
-    transform: rotate(-1deg) scale(1.1);
+    transform: rotate(-1deg) scale(1.07);
 }
 .apartados #premios:hover{
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 .apartados #clasificacion:hover{
-    transform: rotate(1deg) scale(1.1);
+    transform: rotate(1deg) scale(1.07);
 }
 footer{
     background: #111;
@@ -120,7 +120,7 @@ footer{
         align-items: center;
     }
     .info p{
-        font-size: .8rem;
+        font-size: 1em;
         width: 90%;
     }
     .info img{
