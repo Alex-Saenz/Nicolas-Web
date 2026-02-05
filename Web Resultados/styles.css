@@ -1,0 +1,118 @@
+:root {
+  --max-width: 1400px;
+  --gap: 18px;
+  --header-bg: #333;
+  --text: #0b1220;
+  --muted: #fff;
+  --card: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: #555;
+}
+
+/* Header */
+.site-header {
+  background: var(--header-bg);
+  color: #fff;
+  padding: 14px 16px;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: clamp(18px, 2.3vw, 30px);
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  flex: 1;
+}
+
+.logo {
+  width: 74px;
+  height: 74px;
+  object-fit: contain;
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 6px;
+}
+
+/* Layout */
+.layout {
+  max-width: var(--max-width);
+  margin: 16px auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 820px) 1fr;
+  gap: var(--gap);
+  align-items: start;
+}
+
+/* Banners */
+.banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  box-shadow: 0 10px 28px rgba(2, 6, 23, 0.18);
+}
+
+/* Central content */
+.content {
+  min-width: 0;
+}
+
+.sheet-frame {
+  background: var(--card);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(2, 6, 23, 0.18);
+  border: 1px solid rgba(2, 6, 23, 0.08);
+}
+
+/* Responsive iframe: altura cómoda en pantallas */
+.sheet-frame iframe {
+  width: 100%;
+  height: min(78vh, 950px);
+  border: 0;
+  display: block;
+}
+
+.hint {
+  margin: 10px 6px 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.site-footer {
+  max-width: var(--max-width);
+  margin: 10px auto 24px;
+  padding: 0 16px;
+  color: var(--muted);
+}
+
+/* Responsive: en móviles ponemos banners arriba y abajo */
+@media (max-width: 980px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .logo {
+    width: 58px;
+    height: 58px;
+  }
+  .sheet-frame iframe {
+    height: 75vh;
+  }
+}

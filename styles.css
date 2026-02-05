@@ -155,7 +155,13 @@ footer{
     .person-display .organizers-photos{
         grid-template-columns: repeat(3, 1fr);
     }
-    .main-content .apartados img:hover{
-    transform: rotate(-0.7deg) scale(1.05);
+    .apartados #dinamicas:hover{
+    transform: rotate(-1deg) scale(1.02);
+    }
+    .apartados #premios:hover{
+        transform: scale(1.02);
+    }
+    .apartados #clasificacion:hover{
+        transform: rotate(1deg) scale(1.02);
     }
 }
